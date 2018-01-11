@@ -116,3 +116,14 @@ assert( vEven == DenseVector(0.0, 2.0, 4.0))
 vEven := 10.0
 assert( vEven == DenseVector(10.0, 10.0, 10.0))
 assert( v == DenseVector(10.0, 1.0, 10.0, 3.0, 10.0, 5.0))
+
+
+// matrix multiplication
+val m1 = DenseMatrix((2.0,3.0),(5.0,6.0),(8.0,9.0))
+val m2 = DenseMatrix((10.0,11.0),(12.0,13.0))
+
+m1 * m2
+
+val v = DenseVector(1.0,2.0)
+
+m1 * v
