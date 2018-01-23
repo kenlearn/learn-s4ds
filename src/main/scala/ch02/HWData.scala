@@ -6,14 +6,14 @@ import breeze.linalg._
 import breeze.stats._
 import breeze.optimize._
 
-object HWData {
+object HWData extends{
   
-  val DataDirectory = "data/ch02"
+  val dataDirectory = "data/ch02/"
   val fileName = "rep_height_weights.csv"
 
   def load:HWData =
   {
-    val file = Source.fromFile(DataDirectory + fileName)
+    val file = Source.fromFile(dataDirectory + fileName)
     val lines = file.getLines.toVector
     val splitLines = lines.map { _.split(',') }
 
