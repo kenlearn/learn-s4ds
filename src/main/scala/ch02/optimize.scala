@@ -9,5 +9,5 @@ object testOpt extends App {
     (dv1 >:> dv2).toDenseVector
 
   def gradf(xs:DenseVector[Double]) = 2.0 *:* xs
-  
+
 }
